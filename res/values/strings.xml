@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MotioncontrolActivity!</string>
+    <string name="hello">MotioncontrolActivity!</string>
     <string name="app_name">Motioncontrol</string>
+    <string name="b_httpPOST">Activate CAM1</string>
 </resources>
