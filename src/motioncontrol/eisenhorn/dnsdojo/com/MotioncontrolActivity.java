@@ -9,6 +9,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -37,23 +38,33 @@ public class MotioncontrolActivity extends Activity {
 				// TODO Auto-generated method stub
 				// Create a new HttpClient and Post Header
 			    HttpClient httpclient = new DefaultHttpClient();
-			    HttpPost httppost = new HttpPost("http://www.yoursite.com/script.php");
-
+			    HttpGet httppost = new HttpGet("http://192.168.0.170:44500/1/detection/start");
+			
 			    try {
+			    	HttpResponse response = httpclient.execute(httppost);
+				} catch (ClientProtocolException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			/*    try {
 			        // Add your data
-			        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-			        nameValuePairs.add(new BasicNameValuePair("id", "12345"));
-			        nameValuePairs.add(new BasicNameValuePair("stringdata", "AndDev is Cool!"));
-			        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			       // List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			       // nameValuePairs.add(new BasicNameValuePair("id", "12345"));
+			        //nameValuePairs.add(new BasicNameValuePair("stringdata", "AndDev is Cool!"));
+			       // httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
 			        // Execute HTTP Post Request
-			        HttpResponse response = httpclient.execute(httppost);
+			     //   HttpResponse response = httpclient.execute(httppost);
 			        
 			    } catch (ClientProtocolException e) {
 			        // TODO Auto-generated catch block
 			    } catch (IOException e) {
 			        // TODO Auto-generated catch block
 			    }
+			    */
 			}
 		});
         
