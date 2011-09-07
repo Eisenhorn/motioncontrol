@@ -16,6 +16,13 @@
 	android:layout_width="fill_parent" 
 	android:layout_height="wrap_content"
 	android:layout_gravity="center"
-	android:gravity="center" android:id="@+id/bCam1on" android:text="@string/b_httpPOST">
+	android:gravity="center" android:id="@+id/bCam1on" android:text="@string/s_httpPOSTon">
+</Button>
+
+<Button 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center" android:id="@+id/bCam1off" android:text="@string/s_httpPOSToff">
 </Button>
 </LinearLayout>

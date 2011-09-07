@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">MotioncontrolActivity!</string>
-    <string name="app_name">Motioncontrol</string>
-    <string name="b_httpPOST">Activate CAM1</string>
-    <string name="s_motionStartAll">http://192.168.0.170:44500/0/detection/start</string>
+    <string name="app_name">motion</string>
+    <string name="s_httpPOSTon">CAM1 ON</string>
+    <string name="s_httpPOSToff">CAM1 OFF</string><string name="s_motionStartAll">http://192.168.0.170:44500/0/detection/start</string>
     <string name="s_motionStopAll">http://192.168.0.170:44500/0/detection/pause</string>
+    
    
 </resources>
