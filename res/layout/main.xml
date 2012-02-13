@@ -25,4 +25,19 @@
 	android:layout_gravity="center"
 	android:gravity="center" android:id="@+id/bCam1off" android:text="@string/s_httpPOSToff">
 </Button>
+
+<Button 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center" android:id="@+id/bCam2on" android:text="@string/s_httpPOSTon_cam2">
+</Button>
+
+<Button 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center" android:id="@+id/bCam2off" android:text="@string/s_httpPOSToff_cam2">
+</Button>
+
 </LinearLayout>

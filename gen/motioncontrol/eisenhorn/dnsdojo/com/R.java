@@ -18,6 +18,8 @@ public final class R {
     public static final class id {
         public static final int bCam1off=0x7f050001;
         public static final int bCam1on=0x7f050000;
+        public static final int bCam2off=0x7f050003;
+        public static final int bCam2on=0x7f050002;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -26,7 +28,9 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
         public static final int s_httpPOSToff=0x7f040003;
+        public static final int s_httpPOSToff_cam2=0x7f040007;
         public static final int s_httpPOSTon=0x7f040002;
+        public static final int s_httpPOSTon_cam2=0x7f040006;
         public static final int s_motionStartAll=0x7f040004;
         public static final int s_motionStopAll=0x7f040005;
     }

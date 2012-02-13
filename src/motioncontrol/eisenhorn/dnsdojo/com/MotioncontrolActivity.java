@@ -106,6 +106,82 @@ public class MotioncontrolActivity extends Activity {
 			}
 		});
         
+        
+        httpPOST = (Button) findViewById(R.id.bCam2on);
+        httpPOST.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// Create a new HttpClient and Post Header
+			    HttpClient httpclient = new DefaultHttpClient();
+			    HttpGet httppost = new HttpGet("http://192.168.0.170:44500/2/detection/start");
+			
+			    try {
+			    	HttpResponse response = httpclient.execute(httppost);
+				} catch (ClientProtocolException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			/*    try {
+			        // Add your data
+			       // List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			       // nameValuePairs.add(new BasicNameValuePair("id", "12345"));
+			        //nameValuePairs.add(new BasicNameValuePair("stringdata", "AndDev is Cool!"));
+			       // httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+			        // Execute HTTP Post Request
+			     //   HttpResponse response = httpclient.execute(httppost);
+			        
+			    } catch (ClientProtocolException e) {
+			        // TODO Auto-generated catch block
+			    } catch (IOException e) {
+			        // TODO Auto-generated catch block
+			    }
+			    */
+			}
+		});
+        
+        httpPOST = (Button) findViewById(R.id.bCam2off);
+        httpPOST.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// Create a new HttpClient and Post Header
+			    HttpClient httpclient = new DefaultHttpClient();
+			    HttpGet httppost = new HttpGet("http://192.168.0.170:44500/2/detection/pause");
+			
+			    try {
+			    	HttpResponse response = httpclient.execute(httppost);
+				} catch (ClientProtocolException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			/*    try {
+			        // Add your data
+			       // List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			       // nameValuePairs.add(new BasicNameValuePair("id", "12345"));
+			        //nameValuePairs.add(new BasicNameValuePair("stringdata", "AndDev is Cool!"));
+			       // httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+			        // Execute HTTP Post Request
+			     //   HttpResponse response = httpclient.execute(httppost);
+			        
+			    } catch (ClientProtocolException e) {
+			        // TODO Auto-generated catch block
+			    } catch (IOException e) {
+			        // TODO Auto-generated catch block
+			    }
+			    */
+			}
+		});
     }
     
 }

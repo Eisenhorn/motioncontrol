@@ -5,6 +5,8 @@
     <string name="s_httpPOSTon">CAM1 ON</string>
     <string name="s_httpPOSToff">CAM1 OFF</string><string name="s_motionStartAll">http://192.168.0.170:44500/0/detection/start</string>
     <string name="s_motionStopAll">http://192.168.0.170:44500/0/detection/pause</string>
+    <string name="s_httpPOSTon_cam2">CAM2 ON</string>
+    <string name="s_httpPOSToff_cam2">CAM2 OFF</string>
     
    
 </resources>
