@@ -33,7 +33,6 @@ public class MotioncontrolActivity extends Activity {
         httpPOST = (Button) findViewById(R.id.bCam1on);
         httpPOST.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// Create a new HttpClient and Post Header
@@ -71,7 +70,6 @@ public class MotioncontrolActivity extends Activity {
         httpPOST = (Button) findViewById(R.id.bCam1off);
         httpPOST.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// Create a new HttpClient and Post Header
@@ -110,9 +108,7 @@ public class MotioncontrolActivity extends Activity {
         httpPOST = (Button) findViewById(R.id.bCam2on);
         httpPOST.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				// Create a new HttpClient and Post Header
 			    HttpClient httpclient = new DefaultHttpClient();
 			    HttpGet httppost = new HttpGet("http://192.168.0.170:44500/2/detection/start");
@@ -148,7 +144,6 @@ public class MotioncontrolActivity extends Activity {
         httpPOST = (Button) findViewById(R.id.bCam2off);
         httpPOST.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// Create a new HttpClient and Post Header
