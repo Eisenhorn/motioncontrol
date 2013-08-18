@@ -16,6 +16,7 @@ import org.apache.http.message.BasicNameValuePair;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 
@@ -29,6 +30,10 @@ public class MotioncontrolActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        // Deactivate StrictMode
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         
         httpPOST = (Button) findViewById(R.id.bCam1on);
         httpPOST.setOnClickListener(new View.OnClickListener() {
